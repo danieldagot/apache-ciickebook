@@ -5,7 +5,7 @@ end
 package 'apache2'
 
 file '/var/www/html/index.html' do
-  content "{node['username']} <p id='date'></p>
+  content "#{node['username']} <p id='date'></p>
   <script>
   n =  new Date();
   y = n.getFullYear();
